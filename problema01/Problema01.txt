@@ -1,0 +1,35 @@
+/*
+Generar e imprimir la siguiente serie:
+-1/1+1/2-1/3+1/4-1/5+1/6-1/7+1/8-1/9+1/10
+*/
+
+1. Inicio
+
+//declaro las variables
+
+2. limite, i[0, n] <-- 10
+3. numerador, i[0, n] <-- 1
+4. denominador, i[0, n] <-- 1
+5. cadena, x(100)[{0-9},{-,+, BS, /}] <-- ""
+6. simbolo1, x(1)[{+}]
+7. simbolo2, x(1)[{-}] 
+8. simbolo, x(5)[{-,+,/}] 
+
+// proceso
+
+9. Mientras (denominador <--limite) entonces 
+
+10.	Si (denominador MOD 2 <--0) entonces
+11.	   simbolo <-- simbolo1
+12.	De lo contrario
+13.	   simbolo <-- simbolo2
+14.	Fin si
+
+15. cadena <-- cadena + simbolo + numerador + "/" + denominador + " "
+16. denominador <-- denominador + 1 
+17. Fin Mientras
+
+//salida
+
+18. Escribir cadena
+19. Fin
